@@ -44,15 +44,13 @@ namespace Sistema_Escola
             this.textEMAIL = new System.Windows.Forms.TextBox();
             this.textCIDADE = new System.Windows.Forms.TextBox();
             this.textSENHA = new System.Windows.Forms.TextBox();
-            this.pbCadastrar = new System.Windows.Forms.PictureBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbLogin = new System.Windows.Forms.PictureBox();
+            this.pbCadastrar = new System.Windows.Forms.Button();
+            this.pbLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCadastrar)).BeginInit();
             this.menuStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -193,19 +191,6 @@ namespace Sistema_Escola
             this.textSENHA.Size = new System.Drawing.Size(479, 27);
             this.textSENHA.TabIndex = 13;
             // 
-            // pbCadastrar
-            // 
-            this.pbCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.pbCadastrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("pbCadastrar.Image")));
-            this.pbCadastrar.Location = new System.Drawing.Point(458, 573);
-            this.pbCadastrar.Name = "pbCadastrar";
-            this.pbCadastrar.Size = new System.Drawing.Size(184, 44);
-            this.pbCadastrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCadastrar.TabIndex = 14;
-            this.pbCadastrar.TabStop = false;
-            this.pbCadastrar.Click += new System.EventHandler(this.pbCadastrar_Click);
-            // 
             // menuStrip2
             // 
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -225,16 +210,31 @@ namespace Sistema_Escola
             this.sairToolStripMenuItem1.Text = "Sair";
             this.sairToolStripMenuItem1.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
             // 
+            // pbCadastrar
+            // 
+            this.pbCadastrar.BackColor = System.Drawing.Color.Red;
+            this.pbCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pbCadastrar.ForeColor = System.Drawing.Color.White;
+            this.pbCadastrar.Location = new System.Drawing.Point(491, 573);
+            this.pbCadastrar.Name = "pbCadastrar";
+            this.pbCadastrar.Size = new System.Drawing.Size(140, 40);
+            this.pbCadastrar.TabIndex = 18;
+            this.pbCadastrar.Text = "Cadastrar";
+            this.pbCadastrar.UseVisualStyleBackColor = false;
+            this.pbCadastrar.Click += new System.EventHandler(this.pbCadastrar_Click_1);
+            // 
             // pbLogin
             // 
-            this.pbLogin.Image = ((System.Drawing.Image)(resources.GetObject("pbLogin.Image")));
-            this.pbLogin.Location = new System.Drawing.Point(94, 573);
+            this.pbLogin.BackColor = System.Drawing.Color.Red;
+            this.pbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pbLogin.ForeColor = System.Drawing.Color.White;
+            this.pbLogin.Location = new System.Drawing.Point(80, 573);
             this.pbLogin.Name = "pbLogin";
-            this.pbLogin.Size = new System.Drawing.Size(192, 40);
-            this.pbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogin.TabIndex = 17;
-            this.pbLogin.TabStop = false;
-            this.pbLogin.Click += new System.EventHandler(this.pbLogin_Click);
+            this.pbLogin.Size = new System.Drawing.Size(140, 40);
+            this.pbLogin.TabIndex = 19;
+            this.pbLogin.Text = "Login";
+            this.pbLogin.UseVisualStyleBackColor = false;
+            this.pbLogin.Click += new System.EventHandler(this.pbLogin_Click_1);
             // 
             // Cadastro
             // 
@@ -266,10 +266,8 @@ namespace Sistema_Escola
             this.Text = "Cadastro";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCadastrar)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,9 +289,9 @@ namespace Sistema_Escola
         private System.Windows.Forms.TextBox textEMAIL;
         private System.Windows.Forms.TextBox textCIDADE;
         private System.Windows.Forms.TextBox textSENHA;
-        private System.Windows.Forms.PictureBox pbCadastrar;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
-        private System.Windows.Forms.PictureBox pbLogin;
+        private System.Windows.Forms.Button pbCadastrar;
+        private System.Windows.Forms.Button pbLogin;
     }
 }

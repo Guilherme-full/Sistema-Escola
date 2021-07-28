@@ -40,6 +40,9 @@ namespace Sistema_Escola
                 }
                 connection.Close();
             }
+            Sistema_Escola sisEs = new Sistema_Escola();
+            sisEs.Show();
+            this.Visible = false;
         }
 
         private void textSenha_TextChanged(object sender, EventArgs e)
