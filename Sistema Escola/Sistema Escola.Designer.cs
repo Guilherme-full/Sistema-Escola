@@ -110,21 +110,21 @@ namespace Sistema_Escola
             // 
             this.alunoToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             // 
             // agendaToolStripMenuItem
             // 
             this.agendaToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.agendaToolStripMenuItem.Text = "Agenda";
             // 
             // resultadoToolStripMenuItem
             // 
             this.resultadoToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.resultadoToolStripMenuItem.Name = "resultadoToolStripMenuItem";
-            this.resultadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.resultadoToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.resultadoToolStripMenuItem.Text = "Resultado";
             // 
             // consultaToolStripMenuItem1
@@ -196,6 +196,7 @@ namespace Sistema_Escola
             this.pbResultados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbResultados.TabIndex = 4;
             this.pbResultados.TabStop = false;
+            this.pbResultados.Click += new System.EventHandler(this.pbResultados_Click);
             // 
             // pbConsultar
             // 
