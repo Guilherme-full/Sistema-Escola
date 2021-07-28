@@ -20,7 +20,19 @@ namespace Sistema_Escola
             InitializeComponent();
         }
 
-        private void pbCadastrar_Click(object sender, EventArgs e)
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbLogin_Click_1(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Visible = false;
+        }
+
+        private void pbCadastrar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -49,19 +61,6 @@ namespace Sistema_Escola
                 comando = null;
             }
 
-
-        }
-
-        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void pbLogin_Click(object sender, EventArgs e)
-        {
-            Login log = new Login();
-            log.Show();
-            this.Visible = false;
         }
     }
 }
