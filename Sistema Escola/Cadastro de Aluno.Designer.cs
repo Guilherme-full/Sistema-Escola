@@ -43,6 +43,7 @@ namespace Sistema_Escola
             this.btnCadastroAluno = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textTurma = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,5 +236,6 @@ namespace Sistema_Escola
         private System.Windows.Forms.Button btnCadastroAluno;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textTurma;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

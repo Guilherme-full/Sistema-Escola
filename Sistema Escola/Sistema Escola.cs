@@ -43,5 +43,11 @@ namespace Sistema_Escola
             Agenda age = new Agenda();
             age.Show();
         }
+
+        private void pbResultados_Click(object sender, EventArgs e)
+        {
+            Resultados result = new Resultados();
+            result.Show();
+        }
     }
 }
