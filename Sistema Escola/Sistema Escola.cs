@@ -49,5 +49,40 @@ namespace Sistema_Escola
             Resultados result = new Resultados();
             result.Show();
         }
+
+        private void pbConsultar_Click(object sender, EventArgs e)
+        {
+            Verificar_Resultados vR = new Verificar_Resultados();
+            vR.Show();
+        }
+
+        private void atsmAluno_Click(object sender, EventArgs e)
+        {
+            Cadastro_de_Aluno cadAluno = new Cadastro_de_Aluno();
+            cadAluno.Show();
+        }
+
+        private void atsmAgenda_Click(object sender, EventArgs e)
+        {
+            Agenda age = new Agenda();
+            age.Show();
+        }
+
+        private void rtsmResultado_Click(object sender, EventArgs e)
+        {
+            Resultados result = new Resultados();
+            result.Show();
+        }
+
+        private void actsAlunosCad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtsReultados_Click(object sender, EventArgs e)
+        {
+            Verificar_Resultados vR = new Verificar_Resultados();
+            vR.Show();
+        }
     }
 }

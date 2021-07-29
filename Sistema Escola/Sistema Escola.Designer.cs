@@ -34,13 +34,13 @@ namespace Sistema_Escola
             this.pbCadAluno = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atsmAluno = new System.Windows.Forms.ToolStripMenuItem();
+            this.atsmAgenda = new System.Windows.Forms.ToolStripMenuItem();
+            this.rtsmResultado = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alunosCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventosCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultadosCadastradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actsAlunosCad = new System.Windows.Forms.ToolStripMenuItem();
+            this.ectsEventCad = new System.Windows.Forms.ToolStripMenuItem();
+            this.rtsReultados = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stsmSAIR = new System.Windows.Forms.ToolStripMenuItem();
             this.pbAgenda = new System.Windows.Forms.PictureBox();
@@ -98,66 +98,71 @@ namespace Sistema_Escola
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alunoToolStripMenuItem,
-            this.agendaToolStripMenuItem,
-            this.resultadoToolStripMenuItem});
+            this.atsmAluno,
+            this.atsmAgenda,
+            this.rtsmResultado});
             this.consultaToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.consultaToolStripMenuItem.Text = "Cadastro";
             // 
-            // alunoToolStripMenuItem
+            // atsmAluno
             // 
-            this.alunoToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.alunoToolStripMenuItem.Text = "Aluno";
+            this.atsmAluno.BackColor = System.Drawing.Color.Gray;
+            this.atsmAluno.Name = "atsmAluno";
+            this.atsmAluno.Size = new System.Drawing.Size(131, 22);
+            this.atsmAluno.Text = "Aluno";
+            this.atsmAluno.Click += new System.EventHandler(this.atsmAluno_Click);
             // 
-            // agendaToolStripMenuItem
+            // atsmAgenda
             // 
-            this.agendaToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.agendaToolStripMenuItem.Text = "Agenda";
+            this.atsmAgenda.BackColor = System.Drawing.Color.Gray;
+            this.atsmAgenda.Name = "atsmAgenda";
+            this.atsmAgenda.Size = new System.Drawing.Size(131, 22);
+            this.atsmAgenda.Text = "Agenda";
+            this.atsmAgenda.Click += new System.EventHandler(this.atsmAgenda_Click);
             // 
-            // resultadoToolStripMenuItem
+            // rtsmResultado
             // 
-            this.resultadoToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.resultadoToolStripMenuItem.Name = "resultadoToolStripMenuItem";
-            this.resultadoToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.resultadoToolStripMenuItem.Text = "Resultado";
+            this.rtsmResultado.BackColor = System.Drawing.Color.Gray;
+            this.rtsmResultado.Name = "rtsmResultado";
+            this.rtsmResultado.Size = new System.Drawing.Size(131, 22);
+            this.rtsmResultado.Text = "Resultado";
+            this.rtsmResultado.Click += new System.EventHandler(this.rtsmResultado_Click);
             // 
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alunosCadastradosToolStripMenuItem,
-            this.eventosCadastradosToolStripMenuItem,
-            this.resultadosCadastradosToolStripMenuItem});
+            this.actsAlunosCad,
+            this.ectsEventCad,
+            this.rtsReultados});
             this.consultaToolStripMenuItem1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
             this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(69, 20);
             this.consultaToolStripMenuItem1.Text = "Consulta";
             // 
-            // alunosCadastradosToolStripMenuItem
+            // actsAlunosCad
             // 
-            this.alunosCadastradosToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.alunosCadastradosToolStripMenuItem.Name = "alunosCadastradosToolStripMenuItem";
-            this.alunosCadastradosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.alunosCadastradosToolStripMenuItem.Text = "Alunos Cadastrados";
+            this.actsAlunosCad.BackColor = System.Drawing.Color.Gray;
+            this.actsAlunosCad.Name = "actsAlunosCad";
+            this.actsAlunosCad.Size = new System.Drawing.Size(193, 22);
+            this.actsAlunosCad.Text = "Alunos Cadastrados";
+            this.actsAlunosCad.Click += new System.EventHandler(this.actsAlunosCad_Click);
             // 
-            // eventosCadastradosToolStripMenuItem
+            // ectsEventCad
             // 
-            this.eventosCadastradosToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.eventosCadastradosToolStripMenuItem.Name = "eventosCadastradosToolStripMenuItem";
-            this.eventosCadastradosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.eventosCadastradosToolStripMenuItem.Text = "Eventos Cadastrados";
+            this.ectsEventCad.BackColor = System.Drawing.Color.Gray;
+            this.ectsEventCad.Name = "ectsEventCad";
+            this.ectsEventCad.Size = new System.Drawing.Size(193, 22);
+            this.ectsEventCad.Text = "Eventos Cadastrados";
             // 
-            // resultadosCadastradosToolStripMenuItem
+            // rtsReultados
             // 
-            this.resultadosCadastradosToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
-            this.resultadosCadastradosToolStripMenuItem.Name = "resultadosCadastradosToolStripMenuItem";
-            this.resultadosCadastradosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.resultadosCadastradosToolStripMenuItem.Text = "Resultados";
+            this.rtsReultados.BackColor = System.Drawing.Color.Gray;
+            this.rtsReultados.Name = "rtsReultados";
+            this.rtsReultados.Size = new System.Drawing.Size(193, 22);
+            this.rtsReultados.Text = "Resultados";
+            this.rtsReultados.Click += new System.EventHandler(this.rtsReultados_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -208,6 +213,7 @@ namespace Sistema_Escola
             this.pbConsultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbConsultar.TabIndex = 5;
             this.pbConsultar.TabStop = false;
+            this.pbConsultar.Click += new System.EventHandler(this.pbConsultar_Click);
             // 
             // panel1
             // 
@@ -266,11 +272,11 @@ namespace Sistema_Escola
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stsmSAIR;
-        private System.Windows.Forms.ToolStripMenuItem alunoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resultadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alunosCadastradosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eventosCadastradosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resultadosCadastradosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem atsmAluno;
+        private System.Windows.Forms.ToolStripMenuItem atsmAgenda;
+        private System.Windows.Forms.ToolStripMenuItem rtsmResultado;
+        private System.Windows.Forms.ToolStripMenuItem actsAlunosCad;
+        private System.Windows.Forms.ToolStripMenuItem ectsEventCad;
+        private System.Windows.Forms.ToolStripMenuItem rtsReultados;
     }
 }
