@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda Cadastrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agenda Cadastrada.Designer.cs">
+      <DependentUpon>Agenda Cadastrada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agenda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alunos Cadastrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alunos Cadastrados.Designer.cs">
+      <DependentUpon>Alunos Cadastrados.cs</DependentUpon>
     </Compile>
     <Compile Include="Cadastro de Aluno.cs">
       <SubType>Form</SubType>
@@ -91,14 +103,26 @@
     <Compile Include="Sistema Escola.Designer.cs">
       <DependentUpon>Sistema Escola.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Verificar Resultados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Verificar Resultados.Designer.cs">
       <DependentUpon>Verificar Resultados.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Agenda Cadastrada.resx">
+      <DependentUpon>Agenda Cadastrada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alunos Cadastrados.resx">
+      <DependentUpon>Alunos Cadastrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro de Aluno.resx">
       <DependentUpon>Cadastro de Aluno.cs</DependentUpon>
@@ -126,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sistema Escola.resx">
       <DependentUpon>Sistema Escola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verificar Resultados.resx">
       <DependentUpon>Verificar Resultados.cs</DependentUpon>

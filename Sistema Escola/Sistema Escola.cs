@@ -76,13 +76,26 @@ namespace Sistema_Escola
 
         private void actsAlunosCad_Click(object sender, EventArgs e)
         {
-
+            Alunos_Cadastrados AluCad = new Alunos_Cadastrados();
+            AluCad.Show();
         }
 
         private void rtsReultados_Click(object sender, EventArgs e)
         {
             Verificar_Resultados vR = new Verificar_Resultados();
             vR.Show();
+        }
+
+        private void ectsEventCad_Click(object sender, EventArgs e)
+        {
+            Agenda_Cadastrada AgeCad = new Agenda_Cadastrada();
+            AgeCad.Show();
+        }
+
+        private void stpSobre_Click(object sender, EventArgs e)
+        {
+            Sobre sob = new Sobre();
+            sob.Show();
         }
     }
 }

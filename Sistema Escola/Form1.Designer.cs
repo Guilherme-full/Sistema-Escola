@@ -50,9 +50,10 @@ namespace Sistema_Escola
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(149, 208);
+            this.progressBar1.BackColor = System.Drawing.Color.White;
+            this.progressBar1.Location = new System.Drawing.Point(149, 213);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(303, 18);
+            this.progressBar1.Size = new System.Drawing.Size(303, 13);
             this.progressBar1.TabIndex = 2;
             // 
             // timer1

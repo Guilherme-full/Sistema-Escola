@@ -1,7 +1,7 @@
 ﻿
 namespace Sistema_Escola
 {
-    partial class Verificar_Resultados
+    partial class Agenda_Cadastrada
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,17 @@ namespace Sistema_Escola
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Verificar_Resultados));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agenda_Cadastrada));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExibir = new System.Windows.Forms.Button();
-            this.pnlResultados = new System.Windows.Forms.Panel();
-            this.dgvResultados = new System.Windows.Forms.DataGridView();
+            this.pnlAgenda = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlResultados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
+            this.pnlAgenda.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -48,43 +48,10 @@ namespace Sistema_Escola
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(964, 643);
+            this.pictureBox1.Size = new System.Drawing.Size(1112, 663);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(491, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Verificar Resultados";
-            // 
-            // btnExibir
-            // 
-            this.btnExibir.BackColor = System.Drawing.Color.White;
-            this.btnExibir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExibir.Location = new System.Drawing.Point(24, 15);
-            this.btnExibir.Name = "btnExibir";
-            this.btnExibir.Size = new System.Drawing.Size(117, 37);
-            this.btnExibir.TabIndex = 3;
-            this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = false;
-            this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
-            // 
-            // pnlResultados
-            // 
-            this.pnlResultados.BackColor = System.Drawing.Color.White;
-            this.pnlResultados.Controls.Add(this.dgvResultados);
-            this.pnlResultados.Controls.Add(this.btnExibir);
-            this.pnlResultados.Location = new System.Drawing.Point(12, 98);
-            this.pnlResultados.Name = "pnlResultados";
-            this.pnlResultados.Size = new System.Drawing.Size(921, 533);
-            this.pnlResultados.TabIndex = 5;
             // 
             // dgvResultados
             // 
@@ -102,7 +69,7 @@ namespace Sistema_Escola
             this.dgvResultados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados.EnableHeadersVisualStyles = false;
-            this.dgvResultados.Location = new System.Drawing.Point(24, 78);
+            this.dgvResultados.Location = new System.Drawing.Point(11, 85);
             this.dgvResultados.Name = "dgvResultados";
             this.dgvResultados.RowHeadersVisible = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
@@ -112,24 +79,57 @@ namespace Sistema_Escola
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dgvResultados.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvResultados.Size = new System.Drawing.Size(879, 436);
-            this.dgvResultados.TabIndex = 5;
+            this.dgvResultados.TabIndex = 10;
             // 
-            // Verificar_Resultados
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(506, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 24);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Agenda Cadastrada";
+            // 
+            // btnExibir
+            // 
+            this.btnExibir.BackColor = System.Drawing.Color.White;
+            this.btnExibir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExibir.Location = new System.Drawing.Point(11, 27);
+            this.btnExibir.Name = "btnExibir";
+            this.btnExibir.Size = new System.Drawing.Size(117, 37);
+            this.btnExibir.TabIndex = 12;
+            this.btnExibir.Text = "Exibir";
+            this.btnExibir.UseVisualStyleBackColor = false;
+            this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
+            // 
+            // pnlAgenda
+            // 
+            this.pnlAgenda.BackColor = System.Drawing.Color.White;
+            this.pnlAgenda.Controls.Add(this.btnExibir);
+            this.pnlAgenda.Controls.Add(this.dgvResultados);
+            this.pnlAgenda.Location = new System.Drawing.Point(69, 75);
+            this.pnlAgenda.Name = "pnlAgenda";
+            this.pnlAgenda.Size = new System.Drawing.Size(921, 533);
+            this.pnlAgenda.TabIndex = 13;
+            // 
+            // Agenda_Cadastrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 643);
-            this.Controls.Add(this.pnlResultados);
+            this.ClientSize = new System.Drawing.Size(1112, 663);
+            this.Controls.Add(this.pnlAgenda);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Verificar_Resultados";
-            this.Text = "Verificar Resultados";
+            this.Name = "Agenda_Cadastrada";
+            this.Text = "Agenda_Cadastrada";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Verificar_Resultados_Load);
+            this.Load += new System.EventHandler(this.Agenda_Cadastrada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlResultados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
+            this.pnlAgenda.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,9 +138,9 @@ namespace Sistema_Escola
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgvResultados;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExibir;
-        private System.Windows.Forms.Panel pnlResultados;
-        private System.Windows.Forms.DataGridView dgvResultados;
+        private System.Windows.Forms.Panel pnlAgenda;
     }
 }

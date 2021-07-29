@@ -16,7 +16,7 @@ namespace Sistema_Escola
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sistema_Escola());
+            Application.Run(new Form1());
         }
     }
 }
