@@ -188,6 +188,7 @@ namespace Sistema_Escola
             // 
             this.textSENHA.Location = new System.Drawing.Point(163, 482);
             this.textSENHA.Name = "textSENHA";
+            this.textSENHA.PasswordChar = '*';
             this.textSENHA.Size = new System.Drawing.Size(479, 27);
             this.textSENHA.TabIndex = 13;
             // 

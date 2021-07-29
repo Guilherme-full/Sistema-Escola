@@ -34,7 +34,7 @@ namespace Sistema_Escola
                 comando.Parameters.AddWithValue("@email", textEmail.Text);
                 conexao.Open();
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro realizado com sucesso");
+                MessageBox.Show("Cadastro realizado com sucesso", "Cadastro", MessageBoxButtons.OK);
             }
             catch(Exception ex)
             {
