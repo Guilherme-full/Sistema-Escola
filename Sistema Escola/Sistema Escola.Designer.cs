@@ -41,7 +41,7 @@ namespace Sistema_Escola
             this.actsAlunosCad = new System.Windows.Forms.ToolStripMenuItem();
             this.ectsEventCad = new System.Windows.Forms.ToolStripMenuItem();
             this.rtsReultados = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stpSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.stsmSAIR = new System.Windows.Forms.ToolStripMenuItem();
             this.pbAgenda = new System.Windows.Forms.PictureBox();
             this.pbResultados = new System.Windows.Forms.PictureBox();
@@ -87,7 +87,7 @@ namespace Sistema_Escola
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultaToolStripMenuItem,
             this.consultaToolStripMenuItem1,
-            this.sobreToolStripMenuItem,
+            this.stpSobre,
             this.stsmSAIR});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -155,6 +155,7 @@ namespace Sistema_Escola
             this.ectsEventCad.Name = "ectsEventCad";
             this.ectsEventCad.Size = new System.Drawing.Size(193, 22);
             this.ectsEventCad.Text = "Eventos Cadastrados";
+            this.ectsEventCad.Click += new System.EventHandler(this.ectsEventCad_Click);
             // 
             // rtsReultados
             // 
@@ -164,12 +165,13 @@ namespace Sistema_Escola
             this.rtsReultados.Text = "Resultados";
             this.rtsReultados.Click += new System.EventHandler(this.rtsReultados_Click);
             // 
-            // sobreToolStripMenuItem
+            // stpSobre
             // 
-            this.sobreToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.sobreToolStripMenuItem.Text = "Sobre";
+            this.stpSobre.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stpSobre.Name = "stpSobre";
+            this.stpSobre.Size = new System.Drawing.Size(52, 20);
+            this.stpSobre.Text = "Sobre";
+            this.stpSobre.Click += new System.EventHandler(this.stpSobre_Click);
             // 
             // stsmSAIR
             // 
@@ -270,7 +272,7 @@ namespace Sistema_Escola
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stpSobre;
         private System.Windows.Forms.ToolStripMenuItem stsmSAIR;
         private System.Windows.Forms.ToolStripMenuItem atsmAluno;
         private System.Windows.Forms.ToolStripMenuItem atsmAgenda;
