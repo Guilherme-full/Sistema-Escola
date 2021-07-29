@@ -47,7 +47,10 @@ namespace Sistema_Escola
                 comando.Parameters.AddWithValue("@senha", textSENHA.Text);
                 conexao.Open();
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro Realizado com Sucesso");
+                MessageBox.Show("Cadastro Realizado com Sucesso", "Cadastro", MessageBoxButtons.OK);
+                Login log = new Login();
+                log.Show();
+                this.Visible = false;
 
             }
             catch (Exception ex)

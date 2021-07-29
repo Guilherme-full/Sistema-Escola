@@ -33,8 +33,8 @@ namespace Sistema_Escola
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.btnExibir = new System.Windows.Forms.Button();
             this.pnlAgenda = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +52,17 @@ namespace Sistema_Escola
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(506, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 24);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Agenda Cadastrada";
             // 
             // dgvResultados
             // 
@@ -80,17 +91,6 @@ namespace Sistema_Escola
             this.dgvResultados.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvResultados.Size = new System.Drawing.Size(879, 436);
             this.dgvResultados.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(506, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 24);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Agenda Cadastrada";
             // 
             // btnExibir
             // 
@@ -138,8 +138,8 @@ namespace Sistema_Escola
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dgvResultados;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvResultados;
         private System.Windows.Forms.Button btnExibir;
         private System.Windows.Forms.Panel pnlAgenda;
     }
