@@ -91,6 +91,12 @@
     <Compile Include="Sistema Escola.Designer.cs">
       <DependentUpon>Sistema Escola.cs</DependentUpon>
     </Compile>
+    <Compile Include="Verificar Resultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verificar Resultados.Designer.cs">
+      <DependentUpon>Verificar Resultados.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sistema Escola.resx">
       <DependentUpon>Sistema Escola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verificar Resultados.resx">
+      <DependentUpon>Verificar Resultados.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
