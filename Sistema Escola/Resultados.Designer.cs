@@ -37,12 +37,12 @@ namespace Sistema_Escola
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnCadastroResultado = new System.Windows.Forms.Button();
+            this.textBimestre = new System.Windows.Forms.TextBox();
             this.textTurma = new System.Windows.Forms.TextBox();
             this.textEvento = new System.Windows.Forms.TextBox();
             this.textRM = new System.Windows.Forms.TextBox();
-            this.textBimestre = new System.Windows.Forms.TextBox();
             this.textResultado = new System.Windows.Forms.TextBox();
-            this.btnCadastroResultado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,51 +123,6 @@ namespace Sistema_Escola
             this.label6.TabIndex = 6;
             this.label6.Text = "Resultado";
             // 
-            // textTurma
-            // 
-            this.textTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTurma.Location = new System.Drawing.Point(172, 105);
-            this.textTurma.Multiline = true;
-            this.textTurma.Name = "textTurma";
-            this.textTurma.Size = new System.Drawing.Size(575, 22);
-            this.textTurma.TabIndex = 7;
-            // 
-            // textEvento
-            // 
-            this.textEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEvento.Location = new System.Drawing.Point(172, 230);
-            this.textEvento.Multiline = true;
-            this.textEvento.Name = "textEvento";
-            this.textEvento.Size = new System.Drawing.Size(575, 22);
-            this.textEvento.TabIndex = 8;
-            // 
-            // textRM
-            // 
-            this.textRM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textRM.Location = new System.Drawing.Point(172, 285);
-            this.textRM.Multiline = true;
-            this.textRM.Name = "textRM";
-            this.textRM.Size = new System.Drawing.Size(575, 22);
-            this.textRM.TabIndex = 9;
-            // 
-            // textBimestre
-            // 
-            this.textBimestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBimestre.Location = new System.Drawing.Point(172, 163);
-            this.textBimestre.Multiline = true;
-            this.textBimestre.Name = "textBimestre";
-            this.textBimestre.Size = new System.Drawing.Size(575, 22);
-            this.textBimestre.TabIndex = 10;
-            // 
-            // textResultado
-            // 
-            this.textResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textResultado.Location = new System.Drawing.Point(172, 348);
-            this.textResultado.Multiline = true;
-            this.textResultado.Name = "textResultado";
-            this.textResultado.Size = new System.Drawing.Size(575, 22);
-            this.textResultado.TabIndex = 11;
-            // 
             // btnCadastroResultado
             // 
             this.btnCadastroResultado.BackColor = System.Drawing.Color.Gray;
@@ -181,17 +136,63 @@ namespace Sistema_Escola
             this.btnCadastroResultado.UseVisualStyleBackColor = false;
             this.btnCadastroResultado.Click += new System.EventHandler(this.btnCadastroResultado_Click);
             // 
+            // textBimestre
+            // 
+            this.textBimestre.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBimestre.Location = new System.Drawing.Point(171, 162);
+            this.textBimestre.Multiline = true;
+            this.textBimestre.Name = "textBimestre";
+            this.textBimestre.Size = new System.Drawing.Size(575, 24);
+            this.textBimestre.TabIndex = 17;
+            // 
+            // textTurma
+            // 
+            this.textTurma.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textTurma.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTurma.Location = new System.Drawing.Point(171, 105);
+            this.textTurma.Multiline = true;
+            this.textTurma.Name = "textTurma";
+            this.textTurma.Size = new System.Drawing.Size(575, 22);
+            this.textTurma.TabIndex = 21;
+            // 
+            // textEvento
+            // 
+            this.textEvento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEvento.Location = new System.Drawing.Point(171, 231);
+            this.textEvento.Multiline = true;
+            this.textEvento.Name = "textEvento";
+            this.textEvento.Size = new System.Drawing.Size(575, 24);
+            this.textEvento.TabIndex = 22;
+            // 
+            // textRM
+            // 
+            this.textRM.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textRM.Location = new System.Drawing.Point(171, 284);
+            this.textRM.Multiline = true;
+            this.textRM.Name = "textRM";
+            this.textRM.Size = new System.Drawing.Size(575, 24);
+            this.textRM.TabIndex = 23;
+            // 
+            // textResultado
+            // 
+            this.textResultado.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textResultado.Location = new System.Drawing.Point(171, 347);
+            this.textResultado.Multiline = true;
+            this.textResultado.Name = "textResultado";
+            this.textResultado.Size = new System.Drawing.Size(575, 24);
+            this.textResultado.TabIndex = 24;
+            // 
             // Resultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 484);
-            this.Controls.Add(this.btnCadastroResultado);
             this.Controls.Add(this.textResultado);
-            this.Controls.Add(this.textBimestre);
             this.Controls.Add(this.textRM);
             this.Controls.Add(this.textEvento);
             this.Controls.Add(this.textTurma);
+            this.Controls.Add(this.textBimestre);
+            this.Controls.Add(this.btnCadastroResultado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -218,11 +219,11 @@ namespace Sistema_Escola
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnCadastroResultado;
+        private System.Windows.Forms.TextBox textBimestre;
         private System.Windows.Forms.TextBox textTurma;
         private System.Windows.Forms.TextBox textEvento;
         private System.Windows.Forms.TextBox textRM;
-        private System.Windows.Forms.TextBox textBimestre;
         private System.Windows.Forms.TextBox textResultado;
-        private System.Windows.Forms.Button btnCadastroResultado;
     }
 }
