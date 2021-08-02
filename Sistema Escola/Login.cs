@@ -19,7 +19,7 @@ namespace Sistema_Escola
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var conexao = "Server=192.168.15.5;Database=cadastrousuariosescola;Uid=Escola;Pwd=escola19098";
+            var conexao = "Server=192.168.15.7;Database=cadastrousuariosescola;Uid=Escola;Pwd=escola19098";
             var connection = new MySqlConnection(conexao);
             var comand = connection.CreateCommand();
             MySqlCommand query = new MySqlCommand("select count(*) from cadastrosusuarioses where email='" + textEmail.Text + "'and senha='" + textSenha.Text + "'", connection);
@@ -33,6 +33,9 @@ namespace Sistema_Escola
                 if (Convert.ToInt32(list.ItemArray[0]) > 0)
                 {
                     MessageBox.Show("Usuario valido", "validação", MessageBoxButtons.OK);
+                    Sistema_Escola sisEs = new Sistema_Escola();
+                    sisEs.Show();
+                    this.Visible = false;
                 }
                 else
                 {
@@ -40,9 +43,7 @@ namespace Sistema_Escola
                 }
                 connection.Close();
             }
-            Sistema_Escola sisEs = new Sistema_Escola();
-            sisEs.Show();
-            this.Visible = false;
+            
         }
 
         private void textSenha_TextChanged(object sender, EventArgs e)
