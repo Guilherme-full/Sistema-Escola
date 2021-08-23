@@ -19,7 +19,7 @@ namespace Sistema_Escola
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var conexao = "Server=192.168.15.7;Database=cadastrousuariosescola;Uid=Escola;Pwd=escola19098";
+            var conexao = "Server=192.168.15.5;Database=cadastrousuariosescola;Uid=Escola;Pwd=escola19098";
             var connection = new MySqlConnection(conexao);
             var comand = connection.CreateCommand();
             MySqlCommand query = new MySqlCommand("select count(*) from cadastrosusuarioses where email='" + textEmail.Text + "'and senha='" + textSenha.Text + "'", connection);
