@@ -48,6 +48,7 @@ namespace Sistema_Escola
             this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pbCadastrar = new System.Windows.Forms.Button();
             this.pbLogin = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip2.SuspendLayout();
@@ -229,7 +230,7 @@ namespace Sistema_Escola
             this.pbLogin.BackColor = System.Drawing.Color.Red;
             this.pbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbLogin.ForeColor = System.Drawing.Color.White;
-            this.pbLogin.Location = new System.Drawing.Point(80, 573);
+            this.pbLogin.Location = new System.Drawing.Point(53, 571);
             this.pbLogin.Name = "pbLogin";
             this.pbLogin.Size = new System.Drawing.Size(140, 40);
             this.pbLogin.TabIndex = 19;
@@ -237,11 +238,25 @@ namespace Sistema_Escola
             this.pbLogin.UseVisualStyleBackColor = false;
             this.pbLogin.Click += new System.EventHandler(this.pbLogin_Click_1);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Red;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.Location = new System.Drawing.Point(272, 571);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(140, 40);
+            this.btnLimpar.TabIndex = 20;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 629);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.pbLogin);
             this.Controls.Add(this.pbCadastrar);
             this.Controls.Add(this.textSENHA);
@@ -295,5 +310,6 @@ namespace Sistema_Escola
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
         private System.Windows.Forms.Button pbCadastrar;
         private System.Windows.Forms.Button pbLogin;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

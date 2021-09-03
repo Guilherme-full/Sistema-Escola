@@ -43,6 +43,7 @@ namespace Sistema_Escola
             this.textEvento = new System.Windows.Forms.TextBox();
             this.textRM = new System.Windows.Forms.TextBox();
             this.textResultado = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -182,11 +183,25 @@ namespace Sistema_Escola
             this.textResultado.Size = new System.Drawing.Size(575, 24);
             this.textResultado.TabIndex = 24;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpar.Location = new System.Drawing.Point(145, 420);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(118, 32);
+            this.btnLimpar.TabIndex = 25;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Resultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 484);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.textResultado);
             this.Controls.Add(this.textRM);
             this.Controls.Add(this.textEvento);
@@ -225,5 +240,6 @@ namespace Sistema_Escola
         private System.Windows.Forms.TextBox textEvento;
         private System.Windows.Forms.TextBox textRM;
         private System.Windows.Forms.TextBox textResultado;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

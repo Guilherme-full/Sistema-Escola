@@ -26,7 +26,7 @@ namespace Sistema_Escola
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=SistemaEscola;Uid=AdministradorEscola;Pwd=administrador123");
+                conexao = new MySqlConnection("Server=192.168.15.2;Database=SistemaEscola;Uid=AdministradorEscola;Pwd=administrador123");
                 strSQL = "select * from CadastroAluno";
                 da = new MySqlDataAdapter(strSQL, conexao);
                 DataTable dt = new DataTable();

@@ -41,6 +41,7 @@ namespace Sistema_Escola
             this.textEvento = new System.Windows.Forms.TextBox();
             this.textData = new System.Windows.Forms.TextBox();
             this.textBimestre = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,11 +164,25 @@ namespace Sistema_Escola
             this.textBimestre.Size = new System.Drawing.Size(643, 21);
             this.textBimestre.TabIndex = 13;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpar.Location = new System.Drawing.Point(100, 359);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(111, 33);
+            this.btnLimpar.TabIndex = 14;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.textBimestre);
             this.Controls.Add(this.textData);
             this.Controls.Add(this.textEvento);
@@ -202,5 +217,6 @@ namespace Sistema_Escola
         private System.Windows.Forms.TextBox textEvento;
         private System.Windows.Forms.TextBox textData;
         private System.Windows.Forms.TextBox textBimestre;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
