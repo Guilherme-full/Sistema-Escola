@@ -25,7 +25,7 @@ namespace Sistema_Escola
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=SistemaEscola;Uid=AdministradorEscola;Pwd=administrador123");
+                conexao = new MySqlConnection("Server=192.168.15.2;Database=SistemaEscola;Uid=AdministradorEscola;Pwd=administrador123");
                 strSQL = "insert into CadastroAgenda (turma, bimestre, evento, data) values (@turma, @bimestre, @evento, @data)";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@turma", textTurma.Text);
@@ -49,6 +49,15 @@ namespace Sistema_Escola
 
             
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            textTurma.Text = "";
+            textBimestre.Text = "";
+            textEvento.Text = "";
+            textData.Text = "";
+            textTurma.Focus();
         }
     }
 }

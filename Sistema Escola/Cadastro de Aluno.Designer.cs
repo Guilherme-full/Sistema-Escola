@@ -44,6 +44,7 @@ namespace Sistema_Escola
             this.label2 = new System.Windows.Forms.Label();
             this.textTurma = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,11 +194,25 @@ namespace Sistema_Escola
             this.textTurma.Size = new System.Drawing.Size(600, 21);
             this.textTurma.TabIndex = 16;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Blue;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.Location = new System.Drawing.Point(205, 479);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(118, 32);
+            this.btnLimpar.TabIndex = 17;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Cadastro_de_Aluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 538);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.textTurma);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCadastroAluno);
@@ -237,5 +252,6 @@ namespace Sistema_Escola
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textTurma;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
