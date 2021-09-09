@@ -36,7 +36,7 @@ namespace Sistema_Escola
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.2;Database=cadastrousuariosescola;Uid=Escola;Pwd=escola19098");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=cadastrousuariosescola;Uid=Escola;Pwd=escola19098");
                 strSQL = "insert into cadastrosusuarioses (nome, sobrenome, estado, cidade, email, senha) values (@nome, @sobrenome, @estado, @cidade, @email, @senha)";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@nome", textNOME.Text);
