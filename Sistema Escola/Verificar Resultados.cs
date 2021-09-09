@@ -26,7 +26,7 @@ namespace Sistema_Escola
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.2;Database=SistemaEscola;Uid=AdministradorEscola;Pwd=administrador123");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=SistemaEscola;Uid=AdministradorEscola;Pwd=administrador123");
                 strSQL = "select pp.Turma as Turma,pp.bimestre as Bimestre, pp.rm as RM, pc.nome_completo as 'Nome do Aluno', pp.evento as Evento, pp.Resultado from CadastroResultado pp inner join CadastroAluno pc on pp.rm = pc.rm";
                 da = new MySqlDataAdapter(strSQL, conexao);
                 DataTable dt = new DataTable();
