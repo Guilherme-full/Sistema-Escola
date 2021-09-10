@@ -16,5 +16,10 @@ namespace Sistema_Escola
         {
             InitializeComponent();
         }
+
+        private void llLinkedin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/guilhermexav/");
+        }
     }
 }
