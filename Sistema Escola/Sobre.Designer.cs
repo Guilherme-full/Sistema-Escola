@@ -32,12 +32,12 @@ namespace Sistema_Escola
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sobre));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.llLinkedin = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@ namespace Sistema_Escola
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.llLinkedin);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -64,16 +64,6 @@ namespace Sistema_Escola
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(689, 279);
             this.panel1.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(476, 240);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(195, 19);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Guilherme Xavier Souza";
             // 
             // label6
             // 
@@ -127,6 +117,18 @@ namespace Sistema_Escola
             this.label2.TabIndex = 0;
             this.label2.Text = "Olá usuário,";
             // 
+            // llLinkedin
+            // 
+            this.llLinkedin.AutoSize = true;
+            this.llLinkedin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llLinkedin.Location = new System.Drawing.Point(495, 234);
+            this.llLinkedin.Name = "llLinkedin";
+            this.llLinkedin.Size = new System.Drawing.Size(176, 18);
+            this.llLinkedin.TabIndex = 5;
+            this.llLinkedin.TabStop = true;
+            this.llLinkedin.Text = "Guilherme Xavier Souza";
+            this.llLinkedin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llLinkedin_LinkClicked);
+            // 
             // Sobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,11 +152,11 @@ namespace Sistema_Escola
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel llLinkedin;
     }
 }
